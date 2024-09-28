@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Daniele Negretti</title>
+
+    <link rel="stylesheet" href="./assets/css/scaffold.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link rel="stylesheet" href="./assets/css/transitions.css" />
+
+    <script src="./assets/js/effects.js"></script>
+    <script src="./assets/js/transitions.js"></script>
+
+</head>
+
+<body>
+    <div id="splashscreen">
+        <div class="container-flex">
+            <div class="grid-w-3 logo-splash-container">
+                <img class="logo-splash hide-sm hide-xs" src="./assets/img/logo_splash.svg" alt="logo splashscreen"
+                    title="logo splashscreen">
+                <img class="logo-splash show-d-sm show-d-xs" src="./assets/img/logo_small.svg" alt="logo splashscreen"
+                    title="logo splashscreen">
+            </div>
+            <div class="grid-w-1 grid-splash-space"></div>
+            <div class="grid-w-6 grid-md-w-7 grid-sm-w-8 grid-xs-w-10 text-splash-container">
+                <h1 class="site-title">Daniele Negretti</h1>
+                <h2 class="site-subtitle">Sviluppatore Web</h2>
+                <p class="p-greatings">Ciao,</p>
+                <p>
+                    Sono Daniele un informatico e analista programmatore con tanta passione per le tecnologie web e per
+                    la programmazione...
+                </p>
+                <div class="box-button">
+                    <button class="button-large button-read-more" onclick="closeSplash()">Continua a leggere</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="app">
+        <header class="container-flex padding-0">
+            <div class="box-logo">
+                <img class="logo-small" src="./assets/img/logo_small.svg" alt="logo small" title="logo small" />
+            </div>
+            <div class="box-title">
+                <h1 class="site-title">Daniele Negretti</h1>
+                <h1 class="site-subtitle">Sviluppatore Web</h1>
+            </div>
+            <div class="box-menu">
+                <div class="container-flex padding-0">
+                    <div class="grid-w-5 hide-sm hide-xs padding-0">
+                        <a href="#portfolio">Portfolio</a>
+                    </div>
+                    <div class="grid-w-5 hide-sm hide-xs padding-0">
+                        <a href="#competenze">Competenze</a>
+                    </div>
+                    <div class="show-sm show-xs grid-w-10 padding-0 justify-content-center">
+                        <img class="menu-icon" src="./assets/img/menu_icon.svg" onclick="openModalWindow('mobile-menu')"
+                            title="Menu icon" alt="Menu icon" />
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-flex content">
+            <div class="grid-w-10 transition-hide">
+                <p class="p-greatings">Ciao,</p>
+                <p>
+                    sono Daniele un informatico e analista programmatore con tanta passione per le tecnologie web e per
+                    la programmazione in generale.
+                </p>
+                <p>
+                    Dal 2007 ho lavorato e collaborato con diverse realtà sia locali che internazionali, maturando
+                    esperienza nella progettazione e sviluppo di soluzioni ad hoc, come siti vetrina per progetti, CMS
+                    tagliati su misura o applicazioni web per la digitalizzazione dei processi amministrativi.
+                </p>
+            </div>
+            <div class="grid-w-10">
+                <h1 align="center" id="portfolio" class="transition-hide">Portfolio</h1>
+                <div class="container-flex">
+                    <div class="grid-w-5 grid-md-w-10 grid-sm-w-10 grid-xs-w-10 padding-0">
+                        <div class="box-project transition-motion-right">
+                            <img src="./assets/img/gastrogenius_logo.svg" title="Gastro Genius logo"
+                                alt="Gasto Genius logo" />
+                            <h3>Gastro Genius</h3>
+                            <div class="box-description">
+                                <p>Gestionale per la pubblicazione e traduzione automatizzata di menù digitali.</p>
+                            </div>
+                            <div class="container-flex padding-0 justify-content-space-evenly">
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/html_icon.svg" title="HTML5" alt="HTML5" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/css_icon.svg" title="CSS3" alt="CSS3" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/nodejs_icon.svg" title="Node.js" alt="Node.js" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/vuejs_icon.svg" title="Vue.js" alt="Vue.js" />
+                                </div>
+                            </div>
+                            <div class="box-button">
+                                <a class="button-large button-open-site" href="https://www.gastrogenius.it"
+                                    target="_blank">Vai al sito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="grid-w-5 grid-md-w-10 grid-sm-w-10 grid-xs-w-10 padding-0 margin-md-t-3 margin-sm-t-3 margin-xs-t-3">
+                        <div class="box-project transition-motion-left">
+                            <img src="./assets/img/upskilling_logo.svg" title="Upskilling logo" alt="Upskilling logo" />
+                            <h3>Upskilling</h3>
+                            <div class="box-description">
+                                <p>Sito vetrina progetto Upskilling del Dipartimento di Interpretazione e Traduzione di
+                                    Forlì.</p>
+                            </div>
+                            <div class="container-flex padding-0 justify-content-space-evenly">
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/html_icon.svg" title="HTML5" alt="HTML5" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/css_icon.svg" title="CSS3" alt="CSS3" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/php_icon.svg" title="PHP" alt="PHP" />
+                                </div>
+                            </div>
+                            <div class="box-button">
+                                <a class="button-large button-open-site" href="https://upskilling.dipintra.it"
+                                    target="_blank">Vai al sito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-flex">
+                    <div class="grid-w-5 grid-md-w-10 grid-sm-w-10 grid-xs-w-10 padding-0">
+                        <div class="box-project transition-motion-right">
+                            <img src="./assets/img/forliviamo_logo.svg" title="Forliviamo logo" alt="Forliviamo logo" />
+                            <h3>Forliviamo</h3>
+                            <div class="box-description">
+                                <p>CMS per la promozione del territorio nell'ambito del progetto Context-Aware Language
+                                    Learning in
+                                    Emilia-Romagna.</p>
+                            </div>
+                            <div class="container-flex padding-0 justify-content-space-evenly">
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/html_icon.svg" title="HTML5" alt="HTML5" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/css_icon.svg" title="CSS3" alt="CSS3" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/nodejs_icon.svg" title="Node.js" alt="Node.js" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/vuejs_icon.svg" title="Vue.js" alt="Vue.js" />
+                                </div>
+                            </div>
+                            <div class="box-button">
+                                <a class="button-large button-open-site" href="https://www.forliviamo.it"
+                                    target="_blank">Vai al sito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="grid-w-5 grid-md-w-10 grid-sm-w-10 grid-xs-w-10 padding-0 margin-md-t-3 margin-sm-t-3 margin-xs-t-3">
+                        <div class="box-project transition-motion-left">
+                            <img src="./assets/img/events_logo.svg" title="Eventi DIT logo" alt="Eventi DIT logo" />
+                            <h3>Eventi DIT</h3>
+                            <div class="box-description">
+                                <p>Applicativo per la creazione e pubblicazione di eventi a pagamento, con gestione
+                                    degli iscritti e delle fatture.</p>
+                            </div>
+                            <div class="container-flex padding-0 justify-content-space-evenly">
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/html_icon.svg" title="HTML5" alt="HTML5" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/css_icon.svg" title="CSS3" alt="CSS3" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/php_icon.svg" title="PHP" alt="PHP" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/vuejs_icon.svg" title="Vue.js" alt="Vue.js" />
+                                </div>
+                            </div>
+                            <div class="box-button">
+                                <a class="button-large button-open-site"
+                                    onclick="openModalWindow('events-gallery')">Apri
+                                    galleria</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-flex justify-content-center">
+                    <div class="grid-w-5 grid-md-w-10 grid-sm-w-10 grid-xs-w-10 padding-0">
+                        <div class="box-project transition-motion-up">
+                            <img src="./assets/img/frontoffice_logo.svg" title="Front office logo"
+                                alt="Front office logo" />
+                            <h3>Front Office</h3>
+                            <div class="box-description">
+                                <p>Gestionale per la raccolta di richieste tramite form e successiva elaborazione dei
+                                    dati per la creazione di documenti digitali.</p>
+                            </div>
+                            <div class="container-flex padding-0 justify-content-space-evenly">
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/html_icon.svg" title="HTML5" alt="HTML5" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/css_icon.svg" title="CSS3" alt="CSS3" />
+                                </div>
+                                <div class="prog-langs-ico">
+                                    <img src="./assets/img/php_icon.svg" title="PHP" alt="PHP" />
+                                </div>
+                            </div>
+                            <!-- <div class="box-button">
+                                <a class="button-large button-open-site"
+                                    onclick="openModalWindow('frontoffice-gallery')">Apri galleria</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-w-10">
+                <h1 align="center" id="competenze" class="transition-hide">Competenze</h1>
+            </div>
+            <div class="grid-w-10">
+                <div class="container-flex padding-0 justify-content-space-evenly">
+                    <div class="grid-w-10 grid-xxl-w-3 grid-xl-w-3 padding-0">
+                        <div class="box-skills box-skills-blue transition-motion-right">
+                            <div class="box-skills-top">
+                                <div class="border"></div>
+                            </div>
+                            <div class="box-skills-body">
+                                <h3>Linguaggi</h3>
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>SQL</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>C#</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-w-10 grid-xxl-w-3 grid-xl-w-3 padding-0">
+                        <div class="box-skills box-skills-brown transition-motion-up">
+                            <div class="box-skills-top">
+                                <div class="border"></div>
+                            </div>
+                            <div class="box-skills-body">
+                                <h3>Frameworks</h3>
+                                <ul>
+                                    <li>CakePHP</li>
+                                    <li>Laravel</li>
+                                    <li>NodeJs</li>
+                                    <li>VueJs</li>
+                                    <li>AdonisJs</li>
+                                    <li>JQuery</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="grid-w-10 grid-xxl-w-3 grid-xl-w-3 padding-0">
+                        <div class="box-skills box-skills-purple transition-motion-left">
+                            <div class="box-skills-top">
+                                <div class="border"></div>
+                            </div>
+                            <div class="box-skills-body">
+                                <h3>Programmi</h3>
+                                <ul>
+                                    <li>VS Code</li>
+                                    <li>Gimp</li>
+                                    <li>InkScape</li>
+                                    <li>GIT</li>
+                                    <li>Visual Studio</li>
+                                </ul>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+
+    <!-- Finestre modali -->
+
+    <!-- Menu per dispositivi mobile -->
+
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="align-right font-white font-6 font-bold padding-r-4 padding-t-4"
+            onclick="closeModalWindow('mobile-menu')">X</div>
+        <div class="align-center margin-t-6 margin-b-2">
+            <span class="font-6 font-white cursor-pointer" onclick="goTo('portfolio')">Porfolio</span>
+        </div>
+        <div class="align-center">
+            <span class="font-6 font-white cursor-pointer" onclick="goTo('competenze')">Competenze</span>
+        </div>
+    </div>
+
+    <!-- Galleria immagini per progetto Eventi DIT -->
+
+    <div id="events-gallery" class="gallery">
+        <div class="container-flex gallery-container">
+            <div class="grid-w-10 gallery-picture">
+                <img id="events-gallery-picture" src="./assets/img/events_screenshot_1.jpg">
+            </div>
+            <div class="grid-w-10 gallery-picture-caption">
+                <p id="events-gallery-caption">Form creazione nuovo evento</p>
+            </div>
+            <div class="grid-w-10 gallery-thumbs">
+                <div class="container-flex padding-0 justify-content-center">
+                    <div class="gallery-thumb">
+                        <img class="active-thumb" id="events-gallery-thumb-1" src="./assets/img/events_screenshot_1.jpg"
+                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-1', 'events_screenshot_1.jpg', 'Form creazione nuovo evento')">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img id="events-gallery-thumb-2" src="./assets/img/events_screenshot_2.jpg"
+                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-2', 'events_screenshot_2.jpg', 'Dettagli dell\'evento, iscritti, quote, attività')">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img id="events-gallery-thumb-3" src="./assets/img/events_screenshot_3.jpg"
+                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-3', 'events_screenshot_3.jpg', 'Form di registrazione all\'evento, seleziona attività')">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img id="events-gallery-thumb-4" src="./assets/img/events_screenshot_4.jpg"
+                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-4', 'events_screenshot_4.jpg', 'Dettagli iscrizione, dati di fatturazione')">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-w-10 align-center">
+                <button class="button-large button-close-gallery"
+                    onclick="closeModalWindow('events-gallery')">Chiudi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Galleria immagini progetto Front Office -->
+
+    <div id="frontoffice-gallery" class="gallery">
+        <div class="container-flex gallery-container">
+            <div class="grid-w-10 gallery-picture">
+                <img id="frontoffice-gallery-picture" src="./assets/img/events_screenshot_1.jpg">
+            </div>
+            <div class="grid-w-10 gallery-picture-caption">
+                <p id="frontoffice-gallery-caption">Form creazione nuovo evento</p>
+            </div>
+            <div class="grid-w-10 gallery-thumbs">
+                <div class="container-flex padding-0 justify-content-center">
+                    <div class="gallery-thumb">
+                        <img class="active-thumb" id="frontoffice-gallery-thumb-1"
+                            src="./assets/img/events_screenshot_1.jpg"
+                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-1', 'events_screenshot_1.jpg', 'Form creazione nuovo evento')">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img id="frontoffice-gallery-thumb-2" src="./assets/img/events_screenshot_2.jpg"
+                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-2', 'events_screenshot_2.jpg', 'Dettagli dell\'evento, iscritti, quote, attività')">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img id="frontoffice-gallery-thumb-3" src="./assets/img/events_screenshot_3.jpg"
+                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-3', 'events_screenshot_3.jpg', 'Form di registrazione all\'evento, seleziona attività')">
+                    </div>
+                    <div class="gallery-thumb">
+                        <img id="frontoffice-gallery-thumb-4" src="./assets/img/events_screenshot_4.jpg"
+                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-4', 'events_screenshot_4.jpg', 'Dettagli iscrizione, dati di fatturazione')">
+                    </div>
+                </div>
+            </div>
+            <div class="grid-w-10 align-center">
+                <button class="button-large button-close-gallery"
+                    onclick="closeModalWindow('frontoffice-gallery')">Chiudi</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
