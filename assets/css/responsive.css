@@ -1,5 +1,10 @@
 @media screen and (max-width:1199px) {
 
+    #splashscreen {
+        top: 30px;
+        transform: unset;        
+    }
+
     .logo-splash-container {
         flex-basis: 100%;
         -webkit-border-radius: unset;
@@ -54,6 +59,10 @@
 
 @media screen and (max-width:767px) {
 
+    #splashscreen {
+        top: 20px;
+    }
+
     #splashscreen .site-title {
         font-size: 3rem;
     }
@@ -83,8 +92,24 @@
 
 @media screen and (max-width:575px) {
 
+    #splashscreen {
+        top: 0;
+    }
+
+    #splashscreen .site-title {
+        font-size: 2.5rem;
+    }
+
+    #splashscreen .site-subtitle {
+        font-size: 1.8rem;
+    }
+
     #splashscreen .text-splash-container p {
         padding: 0 1.5rem;
+    }
+
+    .logo-splash {
+        max-width: 130px;
     }
 
     .content {
