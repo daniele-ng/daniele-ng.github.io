@@ -239,10 +239,10 @@
                                     <img src="./assets/img/php_icon.svg" title="PHP" alt="PHP" />
                                 </div>
                             </div>
-                            <!-- <div class="box-button">
+                            <div class="box-button">
                                 <a class="button-large button-open-site"
                                     onclick="openModalWindow('frontoffice-gallery')">Apri galleria</a>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -341,19 +341,19 @@
                 <div class="container-flex padding-0 justify-content-center">
                     <div class="gallery-thumb">
                         <img class="active-thumb" id="events-gallery-thumb-1" src="./assets/img/events_screenshot_1.jpg"
-                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-1', 'events_screenshot_1.jpg', 'Form creazione nuovo evento')">
+                            onclick="galleryChangePicture('events', 'events-gallery-thumb-1', 'events_screenshot_1.jpg', 'Form creazione nuovo evento')">
                     </div>
                     <div class="gallery-thumb">
                         <img id="events-gallery-thumb-2" src="./assets/img/events_screenshot_2.jpg"
-                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-2', 'events_screenshot_2.jpg', 'Dettagli dell\'evento, iscritti, quote, attività')">
+                            onclick="galleryChangePicture('events', 'events-gallery-thumb-2', 'events_screenshot_2.jpg', 'Dettagli dell\'evento, iscritti, quote, attività')">
                     </div>
                     <div class="gallery-thumb">
                         <img id="events-gallery-thumb-3" src="./assets/img/events_screenshot_3.jpg"
-                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-3', 'events_screenshot_3.jpg', 'Form di registrazione all\'evento, seleziona attività')">
+                            onclick="galleryChangePicture('events', 'events-gallery-thumb-3', 'events_screenshot_3.jpg', 'Form di registrazione all\'evento, seleziona attività')">
                     </div>
                     <div class="gallery-thumb">
                         <img id="events-gallery-thumb-4" src="./assets/img/events_screenshot_4.jpg"
-                            onclick="galleryChangePicture('events-gallery-picture', 'events-gallery-thumb-4', 'events_screenshot_4.jpg', 'Dettagli iscrizione, dati di fatturazione')">
+                            onclick="galleryChangePicture('events', 'events-gallery-thumb-4', 'events_screenshot_4.jpg', 'Dettagli iscrizione, dati di fatturazione')">
                     </div>
                 </div>
             </div>
@@ -369,29 +369,25 @@
     <div id="frontoffice-gallery" class="gallery">
         <div class="container-flex gallery-container">
             <div class="grid-w-10 gallery-picture">
-                <img id="frontoffice-gallery-picture" src="./assets/img/events_screenshot_1.jpg">
+                <img id="frontoffice-gallery-picture" src="./assets/img/frontoffice_screenshot_1.jpg">
             </div>
             <div class="grid-w-10 gallery-picture-caption">
-                <p id="frontoffice-gallery-caption">Form creazione nuovo evento</p>
+                <p id="frontoffice-gallery-caption">Lista richieste inviate dal form del frontend</p>
             </div>
             <div class="grid-w-10 gallery-thumbs">
                 <div class="container-flex padding-0 justify-content-center">
                     <div class="gallery-thumb">
                         <img class="active-thumb" id="frontoffice-gallery-thumb-1"
-                            src="./assets/img/events_screenshot_1.jpg"
-                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-1', 'events_screenshot_1.jpg', 'Form creazione nuovo evento')">
+                            src="./assets/img/frontoffice_screenshot_1.jpg"
+                            onclick="galleryChangePicture('frontoffice', 'frontoffice-gallery-thumb-1', 'frontoffice_screenshot_1.jpg', 'Lista richieste inviate dal form del frontend')">
                     </div>
                     <div class="gallery-thumb">
-                        <img id="frontoffice-gallery-thumb-2" src="./assets/img/events_screenshot_2.jpg"
-                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-2', 'events_screenshot_2.jpg', 'Dettagli dell\'evento, iscritti, quote, attività')">
+                        <img id="frontoffice-gallery-thumb-2" src="./assets/img/frontoffice_screenshot_2.jpg"
+                            onclick="galleryChangePicture('frontoffice', 'frontoffice-gallery-thumb-2', 'frontoffice_screenshot_2.jpg', 'Dettagli e gestione della richiesta')">
                     </div>
                     <div class="gallery-thumb">
-                        <img id="frontoffice-gallery-thumb-3" src="./assets/img/events_screenshot_3.jpg"
-                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-3', 'events_screenshot_3.jpg', 'Form di registrazione all\'evento, seleziona attività')">
-                    </div>
-                    <div class="gallery-thumb">
-                        <img id="frontoffice-gallery-thumb-4" src="./assets/img/events_screenshot_4.jpg"
-                            onclick="galleryChangePicture('frontoffice-gallery-picture', 'frontoffice-gallery-thumb-4', 'events_screenshot_4.jpg', 'Dettagli iscrizione, dati di fatturazione')">
+                        <img id="frontoffice-gallery-thumb-3" src="./assets/img/frontoffice_screenshot_3.jpg"
+                            onclick="galleryChangePicture('frontoffice', 'frontoffice-gallery-thumb-3', 'frontoffice_screenshot_3.jpg', 'Archivio documenti in formato Word relativi alla richiesta')">
                     </div>
                 </div>
             </div>

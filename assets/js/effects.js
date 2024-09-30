@@ -43,16 +43,19 @@ function closeModalWindow(elmId) {
  * Listener evento click sull'anteprima di un'immagine della galleria
  * Cambia immagine visualizzata applicando un effetto fade-out fade-in
  * 
- * @param {String} mainPictureId id elemento img in cui visualizzare l'immagine
+ * @param {String} galleryName nome della galleria di immagini
  * @param {String} elmId id elemento anteprima selezionato
  * @param {String} imgName nome file dell'immagine
  * @param {String} caption testo da visualizzare nella didascalia
  */
-function galleryChangePicture(mainPictureId, elmId, imgName, caption) {    
+function galleryChangePicture(galleryName, elmId, imgName, caption) {
 
-    fadeOut(mainPictureId , () => {
+    const galleryPictureId = galleryName + "-gallery-picture";
+    const galleryCaptionId = galleryName + "-gallery-caption";
 
-        document.getElementById(mainPictureId).src = './assets/img/' + imgName;
+    fadeOut(galleryPictureId , () => {
+
+        document.getElementById(galleryPictureId).src = './assets/img/' + imgName;
 
         document.querySelectorAll(".active-thumb").forEach(elm => {
 
@@ -60,10 +63,10 @@ function galleryChangePicture(mainPictureId, elmId, imgName, caption) {
             
         });
 
-        fadeIn(mainPictureId, () => {
+        fadeIn(galleryPictureId, () => {
 
             document.getElementById(elmId).classList.add("active-thumb");
-            document.getElementById('events-gallery-caption').innerHTML = caption;
+            document.getElementById(galleryCaptionId).innerHTML = caption;
 
         });
 
